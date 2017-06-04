@@ -93,6 +93,14 @@ public class PlayerShooting : MonoBehaviour
                     enemyHealth.TakeDamage(damagePerShot, shootHit.point);
                 }
                 gunLine.SetPosition(1, shootHit.point);
+
+                EnemyHealthSlowGun enemyHealthSlowGun = shootHit.collider.GetComponent<EnemyHealthSlowGun>();
+
+                if (enemyHealth || enemyHealthSlowGun != null)
+                {
+                    enemyHealthSlowGun.TakeDamage(damagePerShot, shootHit.point);
+                }
+                gunLine.SetPosition(1, shootHit.point);
             }
             else
             {

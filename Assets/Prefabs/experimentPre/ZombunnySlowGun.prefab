@@ -90,9 +90,9 @@ GameObject:
   - component: {fileID: 136462641030937764}
   - component: {fileID: 82251861500072626}
   - component: {fileID: 195511816701471626}
-  - component: {fileID: 114492342234825008}
-  - component: {fileID: 114073251899431428}
   - component: {fileID: 114928156364280214}
+  - component: {fileID: 114771933292589910}
+  - component: {fileID: 114757917276732456}
   m_Layer: 9
   m_Name: ZombunnySlowGun
   m_TagString: Enemy
@@ -513,17 +513,6 @@ Light:
   m_UseColorTemperature: 0
   m_ShadowRadius: 0
   m_ShadowAngle: 0
---- !u!114 &114073251899431428
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1899055140934444}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fea58be7e08860642910a138913eb92f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &114342894326151200
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -541,7 +530,7 @@ MonoBehaviour:
   startShooting: 0
   shotSpeed: 1000
   bullet: {fileID: 1523444914525124, guid: 46066443e98e08f4f81e3b6319cb3cdf, type: 2}
---- !u!114 &114492342234825008
+--- !u!114 &114757917276732456
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -549,7 +538,18 @@ MonoBehaviour:
   m_GameObject: {fileID: 1899055140934444}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a9b9d14572410594cb85d40eedfb150c, type: 3}
+  m_Script: {fileID: 11500000, guid: 8cd432b1f5979ec45b2525b03a0323ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &114771933292589910
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1899055140934444}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 30f89a3f36074364295358cfc9afd9ad, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   startingHealth: 100
