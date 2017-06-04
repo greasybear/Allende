@@ -10,8 +10,7 @@ public class SlowShoot : MonoBehaviour
 
     GameObject player;
     float timer;
-    
-    
+  
     ParticleSystem gunParticles;
     
     AudioSource gunAudio;

@@ -48,6 +48,8 @@ public class EnemyHealthSlowGun : MonoBehaviour {
         if (stabRange && Input.GetKey("space"))
         { Death(); }
 
+       
+
     }
 
 
