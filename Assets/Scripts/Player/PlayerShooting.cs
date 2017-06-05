@@ -16,10 +16,7 @@ public class PlayerShooting : MonoBehaviour
     AudioSource gunAudio;
     Light gunLight;
     float effectsDisplayTime = 0.2f;
-
     public bool shield;
-    public GameObject shieldy;
-   
 
 
     void Awake ()
@@ -49,12 +46,12 @@ public class PlayerShooting : MonoBehaviour
             DisableEffects ();
         }
         if (Input.GetButton("Fire2"))
-        { shield = true;
-            shieldy.SetActive(true);
+        { shield = true; 
+        
         }
         else
         { shield = false;
-            shieldy.SetActive(false);
+        
         }
 
 

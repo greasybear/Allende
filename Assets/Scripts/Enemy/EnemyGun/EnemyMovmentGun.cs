@@ -6,7 +6,7 @@ public class EnemyMovmentGun : MonoBehaviour {
     Transform player;
     PlayerHealth playerHealth;
     EnemyHealth enemyHealth;
-    UnityEngine.AI.NavMeshAgent nav;
+    public UnityEngine.AI.NavMeshAgent nav;
     EnemyAttackGun enemyAttack;
 
 
@@ -19,6 +19,11 @@ public class EnemyMovmentGun : MonoBehaviour {
         enemyAttack = GetComponent<EnemyAttackGun>();
 
     }
+    public void FindPlayer()
+    {
+        nav.enabled = true;
+        nav.SetDestination(player.position);
+    }
 
 
     void Update()
@@ -28,11 +33,12 @@ public class EnemyMovmentGun : MonoBehaviour {
         {
             nav.enabled = false;
             transform.LookAt(player);
-        }
-        else if (enemyHealth.currentHealth > 0 && playerHealth.currentHealth > 0 && !enemyAttack.playerInRange)
+        }   
+        else if (enemyHealth.currentHealth > 0 && playerHealth.currentHealth > 0 && !enemyAttack.playerInRange )
         {
-            nav.enabled = true;
-            nav.SetDestination(player.position);
+            FindPlayer();
+            //nav.enabled = true;
+            //nav.SetDestination(player.position);
         }
 
         if (enemyHealth.isDead)

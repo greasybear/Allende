@@ -21,7 +21,8 @@ public class BulletDamage : MonoBehaviour {
 
             Destroy(gameObject);
         }
-        Destroy(gameObject);
+        else { Destroy(gameObject); }
+        
 
     }
 
