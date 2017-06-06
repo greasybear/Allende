@@ -4,28 +4,22 @@ using UnityEngine;
 
 public class PlantShield : MonoBehaviour {
     public GameObject plantedShield;
-    public float shieldCount = 2f;
-    public GameObject shieldy;
+    
     PlayerMovement playerMovement;
+    public float speedGain = 2f;
+
+    void Awake()
+    { playerMovement = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerMovement>(); }
+
+
     void Update () {
 
-        if (Input.GetKeyDown(KeyCode.T)&& shieldCount > 0f)
-            {
-            
-                Instantiate(plantedShield, transform.position + transform.forward*1 +transform.up*1, transform.rotation); 
+        if (Input.GetKeyDown(KeyCode.T)&& playerMovement.shieldCount > 0f)
+            {           
+               Instantiate(plantedShield, transform.position + transform.forward*1 +transform.up*1, transform.rotation); 
 
-                shieldCount -= 1;
-            playerMovement.speed += 1;
-        }
-        if (Input.GetButton("Fire2") && shieldCount > 0f)
-        {
-            
-            shieldy.SetActive(true);
-        }
-        else
-        {
-            
-            shieldy.SetActive(false);
-        }
+               playerMovement.shieldCount -= 1;
+               playerMovement.speed += speedGain;
+        }       
     }
 }

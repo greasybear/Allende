@@ -9,8 +9,8 @@ public class PlayerMovement : MonoBehaviour
     Rigidbody playerRigidbody;          // Reference to the player's rigidbody.
     int floorMask;                      // A layer mask so that a ray can be cast just at gameobjects on the floor layer.
     float camRayLength = 100f;          // The length of the ray from the camera into the scene.
-    
-
+    public float shieldCount = 2f;
+    public GameObject shieldy;
     void Awake()
     {
         // Create a layer mask for the floor layer.
@@ -20,7 +20,17 @@ public class PlayerMovement : MonoBehaviour
         anim = GetComponent<Animator>();
         playerRigidbody = GetComponent<Rigidbody>();
     }
-
+    void Update()
+    {
+        if (Input.GetButton("Fire2") && shieldCount > 0f)
+        {
+            shieldy.SetActive(true);
+        }
+        else
+        {
+            shieldy.SetActive(false);
+        }
+    }
 
     void FixedUpdate()
     {
