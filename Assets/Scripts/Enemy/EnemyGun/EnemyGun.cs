@@ -20,7 +20,7 @@ public class EnemyGun : MonoBehaviour
     float effectsDisplayTime = 0.2f;
     public bool startShooting = false;
     public float accuracy = .2f;
-    EnemyMovmentGun enemyMovementGun; 
+     
     
    
     
@@ -110,7 +110,7 @@ public class EnemyGun : MonoBehaviour
         else
         {
             gunLine.SetPosition(1, shootRay.origin + shootRay.direction * range);
-            enemyMovementGun.FindPlayer();
+            
         }
     }
 }

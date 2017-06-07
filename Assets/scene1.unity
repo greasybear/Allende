@@ -260,48 +260,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 75, y: 60}
   m_Pivot: {x: 0, y: 0}
---- !u!1001 &191032392
-Prefab:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 4091952565534080, guid: 3b04ad34fe17e294e8a1f05c464e22c5, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: 0.24611855
-      objectReference: {fileID: 0}
-    - target: {fileID: 4091952565534080, guid: 3b04ad34fe17e294e8a1f05c464e22c5, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: 0.71
-      objectReference: {fileID: 0}
-    - target: {fileID: 4091952565534080, guid: 3b04ad34fe17e294e8a1f05c464e22c5, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: -28.13
-      objectReference: {fileID: 0}
-    - target: {fileID: 4091952565534080, guid: 3b04ad34fe17e294e8a1f05c464e22c5, type: 2}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4091952565534080, guid: 3b04ad34fe17e294e8a1f05c464e22c5, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4091952565534080, guid: 3b04ad34fe17e294e8a1f05c464e22c5, type: 2}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4091952565534080, guid: 3b04ad34fe17e294e8a1f05c464e22c5, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4091952565534080, guid: 3b04ad34fe17e294e8a1f05c464e22c5, type: 2}
-      propertyPath: m_RootOrder
-      value: 14
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_ParentPrefab: {fileID: 100100000, guid: 3b04ad34fe17e294e8a1f05c464e22c5, type: 2}
-  m_IsPrefabParent: 0
 --- !u!1 &289557994
 GameObject:
   m_ObjectHideFlags: 0
@@ -480,58 +438,49 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 2013104407}
     m_Modifications:
-    - target: {fileID: 4188691763057448, guid: b74838dff85f3ee4dba4d4a573589ba4, type: 2}
+    - target: {fileID: 4725674240600228, guid: a87837c6125a76048b5890355298ae9f, type: 2}
       propertyPath: m_LocalPosition.x
       value: -29.66505
       objectReference: {fileID: 0}
-    - target: {fileID: 4188691763057448, guid: b74838dff85f3ee4dba4d4a573589ba4, type: 2}
+    - target: {fileID: 4725674240600228, guid: a87837c6125a76048b5890355298ae9f, type: 2}
       propertyPath: m_LocalPosition.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4188691763057448, guid: b74838dff85f3ee4dba4d4a573589ba4, type: 2}
+    - target: {fileID: 4725674240600228, guid: a87837c6125a76048b5890355298ae9f, type: 2}
       propertyPath: m_LocalPosition.z
       value: -3.4667435
       objectReference: {fileID: 0}
-    - target: {fileID: 4188691763057448, guid: b74838dff85f3ee4dba4d4a573589ba4, type: 2}
+    - target: {fileID: 4725674240600228, guid: a87837c6125a76048b5890355298ae9f, type: 2}
       propertyPath: m_LocalRotation.x
       value: -0
       objectReference: {fileID: 0}
-    - target: {fileID: 4188691763057448, guid: b74838dff85f3ee4dba4d4a573589ba4, type: 2}
+    - target: {fileID: 4725674240600228, guid: a87837c6125a76048b5890355298ae9f, type: 2}
       propertyPath: m_LocalRotation.y
       value: -0
       objectReference: {fileID: 0}
-    - target: {fileID: 4188691763057448, guid: b74838dff85f3ee4dba4d4a573589ba4, type: 2}
+    - target: {fileID: 4725674240600228, guid: a87837c6125a76048b5890355298ae9f, type: 2}
       propertyPath: m_LocalRotation.z
       value: -0
       objectReference: {fileID: 0}
-    - target: {fileID: 4188691763057448, guid: b74838dff85f3ee4dba4d4a573589ba4, type: 2}
+    - target: {fileID: 4725674240600228, guid: a87837c6125a76048b5890355298ae9f, type: 2}
       propertyPath: m_LocalRotation.w
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 4188691763057448, guid: b74838dff85f3ee4dba4d4a573589ba4, type: 2}
+    - target: {fileID: 4725674240600228, guid: a87837c6125a76048b5890355298ae9f, type: 2}
       propertyPath: m_RootOrder
-      value: 2
+      value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 1899055140934444, guid: b74838dff85f3ee4dba4d4a573589ba4, type: 2}
-      propertyPath: m_Name
-      value: ZombunnySlowGun (2)
-      objectReference: {fileID: 0}
-    - target: {fileID: 195511816701471626, guid: b74838dff85f3ee4dba4d4a573589ba4,
-        type: 2}
-      propertyPath: m_Speed
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 114342894326151200, guid: b74838dff85f3ee4dba4d4a573589ba4,
+    - target: {fileID: 114542373820547998, guid: a87837c6125a76048b5890355298ae9f,
         type: 2}
       propertyPath: shotSpeed
-      value: 1500
+      value: 2000
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-  m_ParentPrefab: {fileID: 100100000, guid: b74838dff85f3ee4dba4d4a573589ba4, type: 2}
+  m_ParentPrefab: {fileID: 100100000, guid: a87837c6125a76048b5890355298ae9f, type: 2}
   m_IsPrefabParent: 0
 --- !u!4 &350590874 stripped
 Transform:
-  m_PrefabParentObject: {fileID: 4188691763057448, guid: b74838dff85f3ee4dba4d4a573589ba4,
+  m_PrefabParentObject: {fileID: 4725674240600228, guid: a87837c6125a76048b5890355298ae9f,
     type: 2}
   m_PrefabInternal: {fileID: 350590873}
 --- !u!1 &358528529
@@ -839,7 +788,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8ec45203ae7a1a54c9d02c355f983833, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 4
+  speed: 5
   shieldCount: 2
   shieldy: {fileID: 490816488}
 --- !u!136 &406210064
@@ -997,6 +946,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   plantedShield: {fileID: 1326473182960816, guid: 67acfda1865794a48b291bdc8c4a9545,
     type: 2}
+  plantedShieldShooter: {fileID: 0}
+  shieldUpgrade: 0
   speedGain: 2
 --- !u!65 &406210070
 BoxCollider:
@@ -1086,7 +1037,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 481687312}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -22.64, y: 532.64, z: -633.34}
+  m_LocalPosition: {x: -18.48, y: 532.64, z: -642.11}
   m_LocalScale: {x: 2.4746602, y: 1.4967331, z: 2.485707}
   m_Children: []
   m_Father: {fileID: 1866318800}
@@ -1190,62 +1141,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 2
---- !u!1001 &519250710
-Prefab:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 2013104407}
-    m_Modifications:
-    - target: {fileID: 4188691763057448, guid: b74838dff85f3ee4dba4d4a573589ba4, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: 22.2
-      objectReference: {fileID: 0}
-    - target: {fileID: 4188691763057448, guid: b74838dff85f3ee4dba4d4a573589ba4, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4188691763057448, guid: b74838dff85f3ee4dba4d4a573589ba4, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: -13.12
-      objectReference: {fileID: 0}
-    - target: {fileID: 4188691763057448, guid: b74838dff85f3ee4dba4d4a573589ba4, type: 2}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4188691763057448, guid: b74838dff85f3ee4dba4d4a573589ba4, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4188691763057448, guid: b74838dff85f3ee4dba4d4a573589ba4, type: 2}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4188691763057448, guid: b74838dff85f3ee4dba4d4a573589ba4, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4188691763057448, guid: b74838dff85f3ee4dba4d4a573589ba4, type: 2}
-      propertyPath: m_RootOrder
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 1899055140934444, guid: b74838dff85f3ee4dba4d4a573589ba4, type: 2}
-      propertyPath: m_Name
-      value: ZombunnySlowGun (8)
-      objectReference: {fileID: 0}
-    - target: {fileID: 195511816701471626, guid: b74838dff85f3ee4dba4d4a573589ba4,
-        type: 2}
-      propertyPath: m_Speed
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 114342894326151200, guid: b74838dff85f3ee4dba4d4a573589ba4,
-        type: 2}
-      propertyPath: shotSpeed
-      value: 1500
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_ParentPrefab: {fileID: 100100000, guid: b74838dff85f3ee4dba4d4a573589ba4, type: 2}
-  m_IsPrefabParent: 0
 --- !u!4 &540679068
 Transform:
   m_ObjectHideFlags: 0
@@ -1254,7 +1149,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 406210062}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -39.36}
+  m_LocalPosition: {x: 0, y: 0, z: -34.2}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 404465319}
@@ -1287,7 +1182,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 565490566}
   m_LocalRotation: {x: 0, y: 0.3826835, z: 0, w: -0.9238795}
-  m_LocalPosition: {x: 18.71, y: 15, z: -24.03}
+  m_LocalPosition: {x: 18.71, y: 15, z: -25.35}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1994373977}
@@ -1306,62 +1201,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 50, y: 3, z: 1}
   m_Center: {x: 0, y: -13.5, z: 0}
---- !u!1001 &770483195
-Prefab:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 2013104407}
-    m_Modifications:
-    - target: {fileID: 4188691763057448, guid: b74838dff85f3ee4dba4d4a573589ba4, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: 19.11
-      objectReference: {fileID: 0}
-    - target: {fileID: 4188691763057448, guid: b74838dff85f3ee4dba4d4a573589ba4, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4188691763057448, guid: b74838dff85f3ee4dba4d4a573589ba4, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: -16.3
-      objectReference: {fileID: 0}
-    - target: {fileID: 4188691763057448, guid: b74838dff85f3ee4dba4d4a573589ba4, type: 2}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4188691763057448, guid: b74838dff85f3ee4dba4d4a573589ba4, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4188691763057448, guid: b74838dff85f3ee4dba4d4a573589ba4, type: 2}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4188691763057448, guid: b74838dff85f3ee4dba4d4a573589ba4, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4188691763057448, guid: b74838dff85f3ee4dba4d4a573589ba4, type: 2}
-      propertyPath: m_RootOrder
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 1899055140934444, guid: b74838dff85f3ee4dba4d4a573589ba4, type: 2}
-      propertyPath: m_Name
-      value: ZombunnySlowGun (9)
-      objectReference: {fileID: 0}
-    - target: {fileID: 195511816701471626, guid: b74838dff85f3ee4dba4d4a573589ba4,
-        type: 2}
-      propertyPath: m_Speed
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 114342894326151200, guid: b74838dff85f3ee4dba4d4a573589ba4,
-        type: 2}
-      propertyPath: shotSpeed
-      value: 1500
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_ParentPrefab: {fileID: 100100000, guid: b74838dff85f3ee4dba4d4a573589ba4, type: 2}
-  m_IsPrefabParent: 0
 --- !u!1001 &782925042
 Prefab:
   m_ObjectHideFlags: 0
@@ -1466,16 +1305,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!4 &975674406 stripped
-Transform:
-  m_PrefabParentObject: {fileID: 4188691763057448, guid: b74838dff85f3ee4dba4d4a573589ba4,
-    type: 2}
-  m_PrefabInternal: {fileID: 2017338964}
---- !u!4 &984111387 stripped
-Transform:
-  m_PrefabParentObject: {fileID: 4188691763057448, guid: b74838dff85f3ee4dba4d4a573589ba4,
-    type: 2}
-  m_PrefabInternal: {fileID: 519250710}
 --- !u!1001 &1018366702
 Prefab:
   m_ObjectHideFlags: 0
@@ -1618,13 +1447,13 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1026750764}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -37.33, y: 533.3992, z: -650.65}
-  m_LocalScale: {x: 5.0298185, y: 3.0421534, z: 32.73672}
+  m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
+  m_LocalPosition: {x: -39.45, y: 533.3992, z: -639.37}
+  m_LocalScale: {x: 1.7898531, y: 3.0421534, z: 19.61321}
   m_Children: []
   m_Father: {fileID: 1866318800}
   m_RootOrder: 4
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
 --- !u!1 &1079452257
 GameObject:
   m_ObjectHideFlags: 0
@@ -1771,67 +1600,6 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1094320227}
   m_Mesh: {fileID: 4300010, guid: bd3a7a773fe02354da0a4d8dbabd8cbb, type: 3}
---- !u!1001 &1108135282
-Prefab:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 2013104407}
-    m_Modifications:
-    - target: {fileID: 4188691763057448, guid: b74838dff85f3ee4dba4d4a573589ba4, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: -29.172226
-      objectReference: {fileID: 0}
-    - target: {fileID: 4188691763057448, guid: b74838dff85f3ee4dba4d4a573589ba4, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4188691763057448, guid: b74838dff85f3ee4dba4d4a573589ba4, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: -7.976124
-      objectReference: {fileID: 0}
-    - target: {fileID: 4188691763057448, guid: b74838dff85f3ee4dba4d4a573589ba4, type: 2}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4188691763057448, guid: b74838dff85f3ee4dba4d4a573589ba4, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4188691763057448, guid: b74838dff85f3ee4dba4d4a573589ba4, type: 2}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4188691763057448, guid: b74838dff85f3ee4dba4d4a573589ba4, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4188691763057448, guid: b74838dff85f3ee4dba4d4a573589ba4, type: 2}
-      propertyPath: m_RootOrder
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1899055140934444, guid: b74838dff85f3ee4dba4d4a573589ba4, type: 2}
-      propertyPath: m_Name
-      value: ZombunnySlowGun (6)
-      objectReference: {fileID: 0}
-    - target: {fileID: 195511816701471626, guid: b74838dff85f3ee4dba4d4a573589ba4,
-        type: 2}
-      propertyPath: m_Speed
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 114342894326151200, guid: b74838dff85f3ee4dba4d4a573589ba4,
-        type: 2}
-      propertyPath: shotSpeed
-      value: 1500
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_ParentPrefab: {fileID: 100100000, guid: b74838dff85f3ee4dba4d4a573589ba4, type: 2}
-  m_IsPrefabParent: 0
---- !u!4 &1108135283 stripped
-Transform:
-  m_PrefabParentObject: {fileID: 4188691763057448, guid: b74838dff85f3ee4dba4d4a573589ba4,
-    type: 2}
-  m_PrefabInternal: {fileID: 1108135282}
 --- !u!1 &1112049953
 GameObject:
   m_ObjectHideFlags: 0
@@ -1928,128 +1696,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 230, z: 0}
---- !u!1001 &1318018690
-Prefab:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 2013104407}
-    m_Modifications:
-    - target: {fileID: 4188691763057448, guid: b74838dff85f3ee4dba4d4a573589ba4, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: -26.77285
-      objectReference: {fileID: 0}
-    - target: {fileID: 4188691763057448, guid: b74838dff85f3ee4dba4d4a573589ba4, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4188691763057448, guid: b74838dff85f3ee4dba4d4a573589ba4, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: 0.43928337
-      objectReference: {fileID: 0}
-    - target: {fileID: 4188691763057448, guid: b74838dff85f3ee4dba4d4a573589ba4, type: 2}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4188691763057448, guid: b74838dff85f3ee4dba4d4a573589ba4, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4188691763057448, guid: b74838dff85f3ee4dba4d4a573589ba4, type: 2}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4188691763057448, guid: b74838dff85f3ee4dba4d4a573589ba4, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4188691763057448, guid: b74838dff85f3ee4dba4d4a573589ba4, type: 2}
-      propertyPath: m_RootOrder
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 1899055140934444, guid: b74838dff85f3ee4dba4d4a573589ba4, type: 2}
-      propertyPath: m_Name
-      value: ZombunnySlowGun (1)
-      objectReference: {fileID: 0}
-    - target: {fileID: 195511816701471626, guid: b74838dff85f3ee4dba4d4a573589ba4,
-        type: 2}
-      propertyPath: m_Speed
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 114342894326151200, guid: b74838dff85f3ee4dba4d4a573589ba4,
-        type: 2}
-      propertyPath: shotSpeed
-      value: 1500
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_ParentPrefab: {fileID: 100100000, guid: b74838dff85f3ee4dba4d4a573589ba4, type: 2}
-  m_IsPrefabParent: 0
---- !u!4 &1318018691 stripped
-Transform:
-  m_PrefabParentObject: {fileID: 4188691763057448, guid: b74838dff85f3ee4dba4d4a573589ba4,
-    type: 2}
-  m_PrefabInternal: {fileID: 1318018690}
---- !u!1001 &1319303409
-Prefab:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 2013104407}
-    m_Modifications:
-    - target: {fileID: 4188691763057448, guid: b74838dff85f3ee4dba4d4a573589ba4, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: -24.650349
-      objectReference: {fileID: 0}
-    - target: {fileID: 4188691763057448, guid: b74838dff85f3ee4dba4d4a573589ba4, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4188691763057448, guid: b74838dff85f3ee4dba4d4a573589ba4, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: 6.097435
-      objectReference: {fileID: 0}
-    - target: {fileID: 4188691763057448, guid: b74838dff85f3ee4dba4d4a573589ba4, type: 2}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4188691763057448, guid: b74838dff85f3ee4dba4d4a573589ba4, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4188691763057448, guid: b74838dff85f3ee4dba4d4a573589ba4, type: 2}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4188691763057448, guid: b74838dff85f3ee4dba4d4a573589ba4, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4188691763057448, guid: b74838dff85f3ee4dba4d4a573589ba4, type: 2}
-      propertyPath: m_RootOrder
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1899055140934444, guid: b74838dff85f3ee4dba4d4a573589ba4, type: 2}
-      propertyPath: m_Name
-      value: ZombunnySlowGun (4)
-      objectReference: {fileID: 0}
-    - target: {fileID: 195511816701471626, guid: b74838dff85f3ee4dba4d4a573589ba4,
-        type: 2}
-      propertyPath: m_Speed
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 114342894326151200, guid: b74838dff85f3ee4dba4d4a573589ba4,
-        type: 2}
-      propertyPath: shotSpeed
-      value: 1500
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_ParentPrefab: {fileID: 100100000, guid: b74838dff85f3ee4dba4d4a573589ba4, type: 2}
-  m_IsPrefabParent: 0
---- !u!4 &1319303410 stripped
-Transform:
-  m_PrefabParentObject: {fileID: 4188691763057448, guid: b74838dff85f3ee4dba4d4a573589ba4,
-    type: 2}
-  m_PrefabInternal: {fileID: 1319303409}
 --- !u!1 &1362477902
 GameObject:
   m_ObjectHideFlags: 0
@@ -2109,7 +1755,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerHealth: {fileID: 1998372409}
-  enemy: {fileID: 1899055140934444, guid: b74838dff85f3ee4dba4d4a573589ba4, type: 2}
+  enemy: {fileID: 1792903460748054, guid: a87837c6125a76048b5890355298ae9f, type: 2}
   spawnTime: 10
   spawnPoints:
   - {fileID: 1171121540}
@@ -2125,7 +1771,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerHealth: {fileID: 1998372409}
-  enemy: {fileID: 1899055140934444, guid: b74838dff85f3ee4dba4d4a573589ba4, type: 2}
+  enemy: {fileID: 1792903460748054, guid: a87837c6125a76048b5890355298ae9f, type: 2}
   spawnTime: 3
   spawnPoints:
   - {fileID: 399995285}
@@ -2152,7 +1798,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1368060747}
   m_LocalRotation: {x: 0, y: 0.3826835, z: 0, w: 0.92387956}
-  m_LocalPosition: {x: -17.6, y: 15, z: -24.99}
+  m_LocalPosition: {x: -19.74, y: 15, z: -24.99}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1994373977}
@@ -2171,11 +1817,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 50, y: 3, z: 1}
   m_Center: {x: 0, y: -13.5, z: 0}
---- !u!4 &1371025511 stripped
-Transform:
-  m_PrefabParentObject: {fileID: 4188691763057448, guid: b74838dff85f3ee4dba4d4a573589ba4,
-    type: 2}
-  m_PrefabInternal: {fileID: 1666517065}
 --- !u!1 &1453329557
 GameObject:
   m_ObjectHideFlags: 0
@@ -2671,62 +2312,6 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
---- !u!1001 &1666517065
-Prefab:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 2013104407}
-    m_Modifications:
-    - target: {fileID: 4188691763057448, guid: b74838dff85f3ee4dba4d4a573589ba4, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: 24.81
-      objectReference: {fileID: 0}
-    - target: {fileID: 4188691763057448, guid: b74838dff85f3ee4dba4d4a573589ba4, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4188691763057448, guid: b74838dff85f3ee4dba4d4a573589ba4, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: -10.75
-      objectReference: {fileID: 0}
-    - target: {fileID: 4188691763057448, guid: b74838dff85f3ee4dba4d4a573589ba4, type: 2}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4188691763057448, guid: b74838dff85f3ee4dba4d4a573589ba4, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4188691763057448, guid: b74838dff85f3ee4dba4d4a573589ba4, type: 2}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4188691763057448, guid: b74838dff85f3ee4dba4d4a573589ba4, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4188691763057448, guid: b74838dff85f3ee4dba4d4a573589ba4, type: 2}
-      propertyPath: m_RootOrder
-      value: 6
-      objectReference: {fileID: 0}
-    - target: {fileID: 1899055140934444, guid: b74838dff85f3ee4dba4d4a573589ba4, type: 2}
-      propertyPath: m_Name
-      value: ZombunnySlowGun (10)
-      objectReference: {fileID: 0}
-    - target: {fileID: 195511816701471626, guid: b74838dff85f3ee4dba4d4a573589ba4,
-        type: 2}
-      propertyPath: m_Speed
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 114342894326151200, guid: b74838dff85f3ee4dba4d4a573589ba4,
-        type: 2}
-      propertyPath: shotSpeed
-      value: 1500
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_ParentPrefab: {fileID: 100100000, guid: b74838dff85f3ee4dba4d4a573589ba4, type: 2}
-  m_IsPrefabParent: 0
 --- !u!1 &1827860842
 GameObject:
   m_ObjectHideFlags: 0
@@ -3026,7 +2611,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1906403855}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -28.62, y: 532.45, z: -631.92}
+  m_LocalPosition: {x: -23.6, y: 532.45, z: -636.09}
   m_LocalScale: {x: 1.8292406, y: 1.1063681, z: 1.8374064}
   m_Children: []
   m_Father: {fileID: 1866318800}
@@ -3121,18 +2706,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 544f2064df03e95419b4a5147c506b08, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startingHealth: 100
+  startingHealth: 100000
   currentHealth: 0
   healthSlider: {fileID: 14893187}
   damageImage: {fileID: 1112049955}
   deathClip: {fileID: 8300000, guid: d36a393bca4582043982db9089e1694f, type: 3}
   flashSpeed: 5
   flashColour: {r: 1, g: 0, b: 0, a: 0.1}
---- !u!4 &2001977217 stripped
-Transform:
-  m_PrefabParentObject: {fileID: 4188691763057448, guid: b74838dff85f3ee4dba4d4a573589ba4,
-    type: 2}
-  m_PrefabInternal: {fileID: 770483195}
 --- !u!1 &2013104406
 GameObject:
   m_ObjectHideFlags: 0
@@ -3147,7 +2727,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &2013104407
 Transform:
   m_ObjectHideFlags: 0
@@ -3155,76 +2735,13 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2013104406}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 5.8}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 1108135283}
-  - {fileID: 1319303410}
   - {fileID: 350590874}
-  - {fileID: 1318018691}
-  - {fileID: 984111387}
-  - {fileID: 2001977217}
-  - {fileID: 1371025511}
-  - {fileID: 975674406}
   m_Father: {fileID: 0}
   m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1001 &2017338964
-Prefab:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 2013104407}
-    m_Modifications:
-    - target: {fileID: 4188691763057448, guid: b74838dff85f3ee4dba4d4a573589ba4, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: 22.11
-      objectReference: {fileID: 0}
-    - target: {fileID: 4188691763057448, guid: b74838dff85f3ee4dba4d4a573589ba4, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4188691763057448, guid: b74838dff85f3ee4dba4d4a573589ba4, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: -10.77
-      objectReference: {fileID: 0}
-    - target: {fileID: 4188691763057448, guid: b74838dff85f3ee4dba4d4a573589ba4, type: 2}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4188691763057448, guid: b74838dff85f3ee4dba4d4a573589ba4, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4188691763057448, guid: b74838dff85f3ee4dba4d4a573589ba4, type: 2}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4188691763057448, guid: b74838dff85f3ee4dba4d4a573589ba4, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4188691763057448, guid: b74838dff85f3ee4dba4d4a573589ba4, type: 2}
-      propertyPath: m_RootOrder
-      value: 7
-      objectReference: {fileID: 0}
-    - target: {fileID: 1899055140934444, guid: b74838dff85f3ee4dba4d4a573589ba4, type: 2}
-      propertyPath: m_Name
-      value: ZombunnySlowGun (11)
-      objectReference: {fileID: 0}
-    - target: {fileID: 195511816701471626, guid: b74838dff85f3ee4dba4d4a573589ba4,
-        type: 2}
-      propertyPath: m_Speed
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 114342894326151200, guid: b74838dff85f3ee4dba4d4a573589ba4,
-        type: 2}
-      propertyPath: shotSpeed
-      value: 1500
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_ParentPrefab: {fileID: 100100000, guid: b74838dff85f3ee4dba4d4a573589ba4, type: 2}
-  m_IsPrefabParent: 0
 --- !u!1 &2048782738
 GameObject:
   m_ObjectHideFlags: 0
