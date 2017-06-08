@@ -38,36 +38,26 @@ public class EnemyMovmentSlow : MonoBehaviour {
         }
 
     }
-    //IEnumerator waitIt()
-    //{
-    //    if (!enemyHealth.isDead)
-    //    {
-    //        yield return new WaitForSeconds(waitingShots);              TESTING W/OUT WAITING
-    //        nav.isStopped = false;                             //error Here
-    //        nav.SetDestination(player.position);          //error here
-    //    }
-
-    //}
 
 
     void Update()
-    {   if (!enemyHealth.isDead)
-        { UnityEngine.AI.NavMeshHit hit; }
-        if (!nav.Raycast(player.position, out hit) && !enemyHealth.isDead)
+    {  
+        if (!nav.Raycast(player.position, out hit) && enemyHealth.currentHealth > 0)
         { playerVisible = true; }
         else {  playerVisible = false; }
 
-        if (enemyAttack.playerInRange && !enemyHealth.isDead && playerVisible) //this is altered to include raycast condition
+        if (enemyAttack.playerInRange && enemyHealth.currentHealth > 0 && playerVisible) //this is altered to include raycast condition
         {
-            nav.isStopped = true;
+            // nav.isStopped = true;
+            nav.SetDestination(transform.position);
             transform.LookAt(player);
             
 
         }
         else if (enemyHealth.currentHealth > 0 && playerHealth.currentHealth > 0 && !enemyAttack.playerInRange)
         {
-            //StartCoroutine(waitIt());   
-            nav.isStopped = false;                             //error Here
+            
+            //nav.isStopped = false;                             
             nav.SetDestination(player.position);
         }
 
