@@ -4107,6 +4107,8 @@ MonoBehaviour:
   speed: 4
   shieldCount: 2
   shieldy: {fileID: 490816488}
+  shootingSpeed: 1
+  isShooting: 0
 --- !u!136 &406210064
 CapsuleCollider:
   m_ObjectHideFlags: 0

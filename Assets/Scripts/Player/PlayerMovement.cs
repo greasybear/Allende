@@ -11,7 +11,11 @@ public class PlayerMovement : MonoBehaviour
     float camRayLength = 100f;          // The length of the ray from the camera into the scene.
     public float shieldCount = 2f;
     public GameObject shieldy;
-    void Awake()
+    public float shootingSpeed;
+    public bool isShooting;
+
+
+    void Awake()    
     {
         // Create a layer mask for the floor layer.
         floorMask = LayerMask.GetMask("Floor");
@@ -30,6 +34,14 @@ public class PlayerMovement : MonoBehaviour
         {
             shieldy.SetActive(false);
         }
+        if (Input.GetButtonDown("Fire1"))
+        // { speed = speed - speedCost; }
+        { isShooting = true; }
+
+        else if (Input.GetButtonUp("Fire1"))
+        //{ speed = speed + speedCost; }
+        { isShooting = false; }
+        
     }
 
     void FixedUpdate()
@@ -53,9 +65,11 @@ public class PlayerMovement : MonoBehaviour
         // Set the movement vector based on the axis input.
         movement.Set(h, 0f, v);
 
-        // Normalise the movement vector and make it proportional to the speed per second.
-        movement = movement.normalized * speed * Time.deltaTime;
-
+        // Normalise the movement vector and make it proportional to the speed per second
+        if (!isShooting)
+        { movement = movement.normalized * speed * Time.deltaTime; }
+        else if (isShooting)
+        { movement = movement.normalized * shootingSpeed * Time.deltaTime; }
         // Move the player to it's current position plus the movement.
         playerRigidbody.MovePosition(transform.position + movement);
     }

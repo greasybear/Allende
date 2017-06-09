@@ -5,7 +5,7 @@ using UnityEngine;
 public class SlowShoot : MonoBehaviour
 {
     public int damagePerShot = 20;
-    public float timeBetweenBullets = 0.15f;
+    public float timeBetweenBullets;
     public float range = 100f;
 
     GameObject player;
@@ -26,7 +26,7 @@ public class SlowShoot : MonoBehaviour
 
         
         gunParticles = GetComponent<ParticleSystem>();
-       
+        timeBetweenBullets = Random.Range(.15f, 1f);
         gunAudio = GetComponent<AudioSource>();
         gunLight = GetComponent<Light>();
         player = GameObject.FindGameObjectWithTag("Player");
