@@ -9,22 +9,21 @@ public class EnemyMovmentSlow : MonoBehaviour {
     EnemyHealthSlowGun enemyHealth;
     UnityEngine.AI.NavMeshAgent nav;
     EnemyAttackGun enemyAttack;
-    public float waitingShots;
-    UnityEngine.AI.NavMeshHit hit;   //this is saying its not used 
+    UnityEngine.AI.NavMeshHit hit;   
     public bool playerVisible;
+    Transform enemy;
     
     
 
 
     void Awake()
     {
+        enemy = this.gameObject.transform;
         player = GameObject.FindGameObjectWithTag("Player").transform;
         playerHealth = player.GetComponent<PlayerHealth>();
         enemyHealth = GetComponent<EnemyHealthSlowGun>();
         nav = GetComponent<UnityEngine.AI.NavMeshAgent>();
         enemyAttack = GetComponent<EnemyAttackGun>();
-        waitingShots = Random.Range(2, 4);
-
 
     }
     void Start()
@@ -32,7 +31,7 @@ public class EnemyMovmentSlow : MonoBehaviour {
         
         if (enemyHealth.currentHealth > 0 && playerHealth.currentHealth > 0 && !enemyAttack.playerInRange)
         {
-            nav.isStopped = false;
+            
             nav.SetDestination(player.position);
          
         }
@@ -41,32 +40,33 @@ public class EnemyMovmentSlow : MonoBehaviour {
 
 
     void Update()
-    {  
-        if (!nav.Raycast(player.position, out hit) && enemyHealth.currentHealth > 0)
-        { playerVisible = true; }
-        else {  playerVisible = false; }
+    {  if (enemyHealth.currentHealth > 0 && !enemyHealth.isDead) //this and next line completely TEST CODE
+        { 
+         if (!nav.Raycast(player.position, out hit))
+            { playerVisible = true; }
+            else { playerVisible = false; }
 
-        if (enemyAttack.playerInRange && enemyHealth.currentHealth > 0 && playerVisible) //this is altered to include raycast condition
-        {
-            // nav.isStopped = true;
-            nav.SetDestination(transform.position);
-            transform.LookAt(player);
-            
+            if (enemyAttack.playerInRange && playerVisible)
+            {
+
+                
+                transform.LookAt(player);
+                nav.SetDestination(enemy.position);
+
+            }
+            else if (playerHealth.currentHealth > 0 && !enemyAttack.playerInRange || !playerVisible)
+            {
+
+
+                nav.SetDestination(player.position);
+            }
+
+            if (enemyHealth.isDead)
+            {
+                nav.enabled = false;
+            }
 
         }
-        else if (enemyHealth.currentHealth > 0 && playerHealth.currentHealth > 0 && !enemyAttack.playerInRange)
-        {
-            
-            //nav.isStopped = false;                             
-            nav.SetDestination(player.position);
-        }
-
-        if (enemyHealth.isDead)
-        {
-            nav.enabled = false;
-        }
-
-
 
     }
 

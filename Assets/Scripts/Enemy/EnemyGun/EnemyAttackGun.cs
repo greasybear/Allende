@@ -5,18 +5,18 @@ public class EnemyAttackGun : MonoBehaviour
 {
     GameObject player;
     public bool playerInRange;
-    EnemyMovmentSlow enemyMovementSlow;
+    
 
     void Awake()
     {
         player = GameObject.FindGameObjectWithTag("Player");
-        enemyMovementSlow = GetComponent<EnemyMovmentSlow>();
+        
       
     }
 
     void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject == player && enemyMovementSlow.playerVisible)
+        if (other.gameObject == player )
         {
             playerInRange = true;
 
