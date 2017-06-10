@@ -18,7 +18,7 @@ public class SlowShoot : MonoBehaviour
     float effectsDisplayTime = 0.2f;
     public bool startShooting = false;
     public float shotSpeed = 50f;
-
+    public float accuracy;
     public GameObject bullet;
 
     void Awake()
@@ -26,7 +26,7 @@ public class SlowShoot : MonoBehaviour
 
         
         gunParticles = GetComponent<ParticleSystem>();
-        timeBetweenBullets = Random.Range(.15f, 1f);
+        timeBetweenBullets = Random.Range(.5f, 1f); //experimenting with shot speed and accuracy, 
         gunAudio = GetComponent<AudioSource>();
         gunLight = GetComponent<Light>();
         player = GameObject.FindGameObjectWithTag("Player");
@@ -66,13 +66,13 @@ public class SlowShoot : MonoBehaviour
     }
 
 
-    void OnTriggerExit(Collider other)
-    {
-        if (other.gameObject == player)
-        {
-            startShooting = false;
-        }
-    }
+    //void OnTriggerExit(Collider other)
+    //{
+    //    if (other.gameObject == player)
+    //    {
+    //        startShooting = false;
+    //    }
+    //}
 
 
 
@@ -88,7 +88,7 @@ public class SlowShoot : MonoBehaviour
         gunParticles.Play();
 
         GameObject shooter = Instantiate(bullet, transform.position, Quaternion.identity) as GameObject;
-        shooter.GetComponent<Rigidbody>().AddForce(transform.forward * shotSpeed);
+        shooter.GetComponent<Rigidbody>().AddForce(transform.forward * shotSpeed + Random.insideUnitSphere*accuracy);
     }
 }
 

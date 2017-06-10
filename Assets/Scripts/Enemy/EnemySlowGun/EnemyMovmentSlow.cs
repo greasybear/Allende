@@ -24,7 +24,6 @@ public class EnemyMovmentSlow : MonoBehaviour {
         enemyHealth = GetComponent<EnemyHealthSlowGun>();
         nav = GetComponent<UnityEngine.AI.NavMeshAgent>();
         enemyAttack = GetComponent<EnemyAttackGun>();
-
     }
     void Start()
     {
