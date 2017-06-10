@@ -572,7 +572,7 @@ MonoBehaviour:
   range: 100
   startShooting: 0
   shotSpeed: 2000
-  accuracy: 500
+  accuracy: 250
   bullet: {fileID: 1523444914525124, guid: 46066443e98e08f4f81e3b6319cb3cdf, type: 2}
 --- !u!114 &114747786648180968
 MonoBehaviour:

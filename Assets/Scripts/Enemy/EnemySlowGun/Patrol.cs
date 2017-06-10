@@ -48,7 +48,7 @@ public class Patrol : MonoBehaviour {
         float dist = Vector3.Distance(player.position, enemy.position);
         
 
-        if (!agent.pathPending && agent.remainingDistance < 0.5f)
+        if (!agent.pathPending && agent.remainingDistance < 3f)
             GoToNextPoint();
 
         if (!agent.Raycast(player.position, out hit))
@@ -56,7 +56,7 @@ public class Patrol : MonoBehaviour {
         else { playerVisible = false; }
 
 
-        if (playerVisible && dist < 10f )
+        if (playerVisible && dist < 20f )
         {
 
             enemyMovement.enabled = true;
