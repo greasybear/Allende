@@ -25,6 +25,7 @@ GameObject:
   - component: {fileID: 54394830301178534}
   - component: {fileID: 135831121384368278}
   - component: {fileID: 114889497174284158}
+  - component: {fileID: 208716524141291598}
   m_Layer: 9
   m_Name: PlantingShield
   m_TagString: Untagged
@@ -123,6 +124,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   inRange: 0
+  pickUpDistance: 3
+  speedGain: 2
 --- !u!135 &135831121384368278
 SphereCollider:
   m_ObjectHideFlags: 1
@@ -133,5 +136,20 @@ SphereCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.41317227
+  m_Radius: 0.27
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!208 &208716524141291598
+NavMeshObstacle:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1326473182960816}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 0.5, y: 0.5, z: 1}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 0, z: 0}
+  m_TimeToStationary: 0.5
