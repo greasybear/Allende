@@ -8,7 +8,7 @@ public class SlowShoot : MonoBehaviour
     public float timeBetweenBullets;
     public float range = 100f;
 
-    GameObject player;
+  //  GameObject player;
     float timer;
   
     ParticleSystem gunParticles;
@@ -21,15 +21,21 @@ public class SlowShoot : MonoBehaviour
     public float accuracy;
     public GameObject bullet;
 
+    Patrol patrol;
+    Transform player;
+    Transform enemy;
+    public float beginShooting = 25f;
+
     void Awake()
     {
+        enemy = this.gameObject.transform;
+        player = GameObject.FindGameObjectWithTag("Player").transform;
 
-        
         gunParticles = GetComponent<ParticleSystem>();
-        timeBetweenBullets = Random.Range(.5f, 1f); //experimenting with shot speed and accuracy, 
+        timeBetweenBullets = Random.Range(.5f, 1f); 
         gunAudio = GetComponent<AudioSource>();
         gunLight = GetComponent<Light>();
-        player = GameObject.FindGameObjectWithTag("Player");
+        patrol = GetComponentInParent<Patrol>();
 
     }
 
@@ -38,7 +44,13 @@ public class SlowShoot : MonoBehaviour
     {
         timer += Time.deltaTime;
 
-        if (startShooting && timer >= timeBetweenBullets && Time.timeScale != 0)
+        float dist = Vector3.Distance(player.position, enemy.position);
+        if (dist < beginShooting)
+        { startShooting = true; }
+        else if (dist > beginShooting)
+        { startShooting = false; }
+
+        if (startShooting && timer >= timeBetweenBullets && Time.timeScale != 0 && patrol.playerVisible)
         {
             Shoot();
         }
@@ -57,13 +69,13 @@ public class SlowShoot : MonoBehaviour
         gunLight.enabled = false;
     }
 
-    void OnTriggerEnter(Collider other)
-    {
-        if (other.gameObject == player)
-        {
-            startShooting = true;
-        }
-    }
+    //void OnTriggerEnter(Collider other)
+    //{
+    //    if (other.gameObject == player)
+    //    {
+    //        startShooting = true;
+    //    }
+    //}
 
 
     //void OnTriggerExit(Collider other)

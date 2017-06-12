@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.AI;
 
 public class EnemyMovmentSlow : MonoBehaviour {
 
@@ -9,7 +10,7 @@ public class EnemyMovmentSlow : MonoBehaviour {
     EnemyHealthSlowGun enemyHealth;
     UnityEngine.AI.NavMeshAgent nav;
     EnemyAttackGun enemyAttack;
-    UnityEngine.AI.NavMeshHit hit;   
+   // UnityEngine.AI.NavMeshHit hit;   
     public bool playerVisible;
     Transform enemy;
     
@@ -40,7 +41,8 @@ public class EnemyMovmentSlow : MonoBehaviour {
 
     void Update()
     {  if (enemyHealth.currentHealth > 0 && !enemyHealth.isDead) //this and next line completely TEST CODE
-        { 
+        {
+            NavMeshHit hit;
          if (!nav.Raycast(player.position, out hit))
             { playerVisible = true; }
             else { playerVisible = false; }

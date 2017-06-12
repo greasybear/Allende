@@ -3,33 +3,43 @@ using System.Collections;
 
 public class EnemyAttackGun : MonoBehaviour
 {
-    GameObject player;
+    Transform enemy;
+    Transform player;
     public bool playerInRange;
-    
+    public float stopAndShoot = 20f;
 
     void Awake()
     {
-        player = GameObject.FindGameObjectWithTag("Player");
-        
-      
+        player = GameObject.FindGameObjectWithTag("Player").transform;
+        enemy = this.gameObject.transform;
+
     }
 
-    void OnTriggerEnter(Collider other)
+    void Update()
     {
-        if (other.gameObject == player )
-        {
-            playerInRange = true;
-
-        }
+        float dist = Vector3.Distance(player.position, enemy.position);
+        if(dist < stopAndShoot)
+        { playerInRange = true; }
+        else if (dist> stopAndShoot)
+        { playerInRange = false; }
     }
 
-    void OnTriggerExit(Collider other)
-    {
-        if (other.gameObject == player)
-        {
-            playerInRange = false;
+    //void OnTriggerEnter(Collider other)
+    //{
+    //    if (other.gameObject == player )
+    //    {
+    //        playerInRange = true;
+
+    //    }
+    //}
+
+    //void OnTriggerExit(Collider other)
+    //{
+    //    if (other.gameObject == player)
+    //    {
+    //        playerInRange = false;
             
             
-        }
-    }
+    //    }
+    //}
 }

@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.AI;
 
 public class Patrol : MonoBehaviour {
     public bool exitPatrol;
@@ -9,11 +10,11 @@ public class Patrol : MonoBehaviour {
     private UnityEngine.AI.NavMeshAgent agent;
     EnemyMovmentSlow enemyMovement;
     public bool playerVisible;
-    UnityEngine.AI.NavMeshHit hit;
     Transform player;
     Transform enemy;
     Patrol patrol;
     public bool hearingRange;
+    public float patrolBreak = 20f;
 
     void Awake()
     {
@@ -47,16 +48,14 @@ public class Patrol : MonoBehaviour {
     {
         float dist = Vector3.Distance(player.position, enemy.position);
         
-
         if (!agent.pathPending && agent.remainingDistance < 3f)
             GoToNextPoint();
-
+        NavMeshHit hit;
         if (!agent.Raycast(player.position, out hit))
         { playerVisible = true; }
         else { playerVisible = false; }
 
-
-        if (playerVisible && dist < 20f )
+        if (playerVisible && dist < patrolBreak )
         {
 
             enemyMovement.enabled = true;
