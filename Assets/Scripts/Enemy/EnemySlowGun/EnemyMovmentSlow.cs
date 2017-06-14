@@ -8,9 +8,9 @@ public class EnemyMovmentSlow : MonoBehaviour {
     Transform player;
     PlayerHealth playerHealth;
     EnemyHealthSlowGun enemyHealth;
-    UnityEngine.AI.NavMeshAgent nav;
+    public NavMeshAgent nav;
     EnemyAttackGun enemyAttack;
-   // UnityEngine.AI.NavMeshHit hit;   
+    public bool alarmSearch = true;
     public bool playerVisible;
     Transform enemy;
     
@@ -26,21 +26,25 @@ public class EnemyMovmentSlow : MonoBehaviour {
         nav = GetComponent<UnityEngine.AI.NavMeshAgent>();
         enemyAttack = GetComponent<EnemyAttackGun>();
     }
+
+    public void FindPlayer()
+    { nav.SetDestination(player.position); }
+
     void Start()
     {
         
         if (enemyHealth.currentHealth > 0 && playerHealth.currentHealth > 0 && !enemyAttack.playerInRange)
         {
-            
-            nav.SetDestination(player.position);
-         
+
+            //nav.SetDestination(player.position);
+            FindPlayer();
         }
 
     }
 
 
     void Update()
-    {  if (enemyHealth.currentHealth > 0 && !enemyHealth.isDead) 
+    {  if (enemyHealth.currentHealth > 0 && !enemyHealth.isDead && alarmSearch) 
         {
             NavMeshHit hit;
          if (!nav.Raycast(player.position, out hit))
