@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.AI;
 
 public class Patrol : MonoBehaviour {
-    public bool exitPatrol;
+    
     public Transform[] patrolPoints;
     private int destPoint = 0;
     private UnityEngine.AI.NavMeshAgent agent;
@@ -13,8 +13,9 @@ public class Patrol : MonoBehaviour {
     Transform player;
     Transform enemy;
     Patrol patrol;
-    public bool hearingRange;
-    public float patrolBreak = 20f;
+    public float breakDistance = 20f;
+    public bool breakPatrol = false;
+    EnemyHealthSlowGun enemyHealth;
 
     void Awake()
     {
@@ -25,6 +26,7 @@ public class Patrol : MonoBehaviour {
         agent.autoBraking = false;
         player = GameObject.FindGameObjectWithTag("Player").transform;
         enemyMovement.enabled = false;
+        enemyHealth = GetComponent<EnemyHealthSlowGun>();
 
         GoToNextPoint();
     }
@@ -36,13 +38,7 @@ public class Patrol : MonoBehaviour {
 
         destPoint = (destPoint + 1) % patrolPoints.Length;
     }
-    
-    void OnTriggerEnter()
-    {
-        hearingRange = true;
-    }
-    void OnTriggerExit()
-    { hearingRange = false;}
+  
 
     void Update()
     {
@@ -55,13 +51,19 @@ public class Patrol : MonoBehaviour {
         { playerVisible = true; }
         else { playerVisible = false; }
 
-        if (playerVisible && dist < patrolBreak )
+        if (playerVisible && dist < breakDistance )
         {
 
-            enemyMovement.enabled = true;
-            patrol.enabled = false;    
+            breakPatrol = true;
         }
-        if (Input.GetButtonDown("Fire1") && hearingRange)
+        if (Input.GetButtonDown("Fire1") && dist< breakDistance)
+        {
+            breakPatrol = true;
+        }
+        if (enemyHealth.beingShot)
+        { breakPatrol = true; }
+        
+        if(breakPatrol)
         {
             enemyMovement.enabled = true;
             patrol.enabled = false;

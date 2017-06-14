@@ -40,7 +40,7 @@ public class EnemyMovmentSlow : MonoBehaviour {
 
 
     void Update()
-    {  if (enemyHealth.currentHealth > 0 && !enemyHealth.isDead) //this and next line completely TEST CODE
+    {  if (enemyHealth.currentHealth > 0 && !enemyHealth.isDead) 
         {
             NavMeshHit hit;
          if (!nav.Raycast(player.position, out hit))

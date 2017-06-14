@@ -16,6 +16,10 @@ public class PlantShield : MonoBehaviour {
 
     void Update () {
 
+        if(Input.GetKeyDown(KeyCode.P))
+        { shieldUpgrade = !shieldUpgrade; }
+
+
         if (Input.GetKeyDown(KeyCode.T)&& playerMovement.shieldCount > 0f && !shieldUpgrade)
             {           
                Instantiate(plantedShield, transform.position + transform.forward*1 +transform.up*1, transform.rotation); 

@@ -6,7 +6,7 @@ public class EnemyAttackGun : MonoBehaviour
     Transform enemy;
     Transform player;
     public bool playerInRange;
-    public float stopAndShoot = 20f;
+    public float stopAndShoot = 18f;
 
     void Awake()
     {
@@ -24,22 +24,4 @@ public class EnemyAttackGun : MonoBehaviour
         { playerInRange = false; }
     }
 
-    //void OnTriggerEnter(Collider other)
-    //{
-    //    if (other.gameObject == player )
-    //    {
-    //        playerInRange = true;
-
-    //    }
-    //}
-
-    //void OnTriggerExit(Collider other)
-    //{
-    //    if (other.gameObject == player)
-    //    {
-    //        playerInRange = false;
-            
-            
-    //    }
-    //}
 }

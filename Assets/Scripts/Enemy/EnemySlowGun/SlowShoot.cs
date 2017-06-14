@@ -8,7 +8,7 @@ public class SlowShoot : MonoBehaviour
     public float timeBetweenBullets;
     public float range = 100f;
 
-  //  GameObject player;
+
     float timer;
   
     ParticleSystem gunParticles;
@@ -20,11 +20,11 @@ public class SlowShoot : MonoBehaviour
     public float shotSpeed = 50f;
     public float accuracy;
     public GameObject bullet;
-
-    Patrol patrol;
+    EnemyMovmentSlow enemyMovement;
+    EnemyAttackGun enemyAttack;
     Transform player;
     Transform enemy;
-    public float beginShooting = 25f;
+    public float beginShooting = 20f;
 
     void Awake()
     {
@@ -35,8 +35,8 @@ public class SlowShoot : MonoBehaviour
         timeBetweenBullets = Random.Range(.5f, 1f); 
         gunAudio = GetComponent<AudioSource>();
         gunLight = GetComponent<Light>();
-        patrol = GetComponentInParent<Patrol>();
-
+        enemyAttack = GetComponentInParent<EnemyAttackGun>();
+        enemyMovement = GetComponentInParent<EnemyMovmentSlow>();
     }
 
 
@@ -50,7 +50,7 @@ public class SlowShoot : MonoBehaviour
         else if (dist > beginShooting)
         { startShooting = false; }
 
-        if (startShooting && timer >= timeBetweenBullets && Time.timeScale != 0 && patrol.playerVisible)
+        if (startShooting && timer >= timeBetweenBullets && Time.timeScale != 0 && enemyAttack.playerInRange && enemyMovement.playerVisible)
         {
             Shoot();
         }
@@ -68,23 +68,6 @@ public class SlowShoot : MonoBehaviour
        
         gunLight.enabled = false;
     }
-
-    //void OnTriggerEnter(Collider other)
-    //{
-    //    if (other.gameObject == player)
-    //    {
-    //        startShooting = true;
-    //    }
-    //}
-
-
-    //void OnTriggerExit(Collider other)
-    //{
-    //    if (other.gameObject == player)
-    //    {
-    //        startShooting = false;
-    //    }
-    //}
 
 
 

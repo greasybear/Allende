@@ -19,6 +19,7 @@ public class EnemyHealthSlowGun : MonoBehaviour {
     bool isSinking;
     SlowShoot slowShoot;
     Transform player;
+    public bool beingShot = false;
 
     void Awake()
     {
@@ -59,7 +60,7 @@ public class EnemyHealthSlowGun : MonoBehaviour {
             return;
 
         enemyAudio.Play();
-
+        beingShot = true;
         currentHealth -= amount;
 
         hitParticles.transform.position = hitPoint;
