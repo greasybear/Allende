@@ -35,8 +35,6 @@ public class EnemyMovmentSlow : MonoBehaviour {
         
         if (enemyHealth.currentHealth > 0 && playerHealth.currentHealth > 0 && !enemyAttack.playerInRange)
         {
-
-            //nav.SetDestination(player.position);
             FindPlayer();
         }
 

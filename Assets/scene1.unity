@@ -4711,7 +4711,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 639967305}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -12.98, y: 1.63, z: -13.24}
+  m_LocalPosition: {x: 23.56, y: 1.63, z: 7.19}
   m_LocalScale: {x: 0.9764083, y: 0.97640824, z: 0.41253063}
   m_Children: []
   m_Father: {fileID: 0}
@@ -5243,6 +5243,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   nav: {fileID: 0}
+  alarmSearch: 1
   playerVisible: 0
 --- !u!114 &952510209
 MonoBehaviour:
@@ -15958,6 +15959,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   nav: {fileID: 0}
+  alarmSearch: 1
   playerVisible: 0
 --- !u!114 &1271211029
 MonoBehaviour:
@@ -20381,6 +20383,7 @@ MonoBehaviour:
   - {fileID: 2038239170}
   alarmer: {fileID: 1802245317}
   alarm: {fileID: 639967309}
+  alarmSounded: 0
 --- !u!1 &1755173447
 GameObject:
   m_ObjectHideFlags: 0
@@ -24468,6 +24471,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   nav: {fileID: 0}
+  alarmSearch: 1
   playerVisible: 0
 --- !u!114 &1983211468
 MonoBehaviour:
