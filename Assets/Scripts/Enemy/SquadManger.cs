@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 
 public class SquadManger : MonoBehaviour {
@@ -9,7 +10,11 @@ public class SquadManger : MonoBehaviour {
     public GameObject alarmer;
     public Transform alarm;
     public bool alarmSounded = false;
-    
+    public float flashSpeed = 5f;
+    public Color flashColour = new Color(1f, 0f, 0f, 0.1f);
+    public Image alarmImage;
+
+
     void BreakPatrol()
     {   if (!alarmSounded)
         {
@@ -26,12 +31,19 @@ public class SquadManger : MonoBehaviour {
 
     void Update()
     {
-        float dist = Vector3.Distance(alarm.position, alarmer.transform.position);
-        if (dist < 3f)
-        {
-            alarmSounded = true;
+        if (alarmSounded)
 
+        {
+            alarmImage.color = flashColour;
         }
+     
+        if (alarmer !=null)
+        {
+            float dist = Vector3.Distance(alarm.position, alarmer.transform.position); //getting null reference here, MAYBE USE TRIGGER BOOL
+            if (dist<3f)
+            { alarmSounded = true; }
+        }
+        
         if (alarmSounded)
         {
             alarmer.GetComponent<EnemyMovmentSlow>().alarmSearch = true;
@@ -41,15 +53,16 @@ public class SquadManger : MonoBehaviour {
 
         foreach (GameObject enemy in squadMembers)
         {
-            if (enemy.GetComponent<Patrol>().breakPatrol) 
-            {
-                
-                
-                BreakPatrol();
+            if (enemy.GetComponent<Patrol>().breakPatrol)
+                {
+
+
+                    BreakPatrol();
+                }
             }
             
 
-        }
+        
 
     }
 }

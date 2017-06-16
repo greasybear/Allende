@@ -28,7 +28,7 @@ public class EnemyMovmentSlow : MonoBehaviour {
     }
 
     public void FindPlayer()
-    { nav.SetDestination(player.position); }
+    { nav.SetDestination(player.position); } //null here
 
     void Start()
     {
