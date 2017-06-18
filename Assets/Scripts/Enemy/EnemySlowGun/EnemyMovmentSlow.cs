@@ -23,7 +23,7 @@ public class EnemyMovmentSlow : MonoBehaviour {
         player = GameObject.FindGameObjectWithTag("Player").transform;
         playerHealth = player.GetComponent<PlayerHealth>();
         enemyHealth = GetComponent<EnemyHealthSlowGun>();
-        nav = GetComponent<UnityEngine.AI.NavMeshAgent>();
+        nav = GetComponent<NavMeshAgent>();
         enemyAttack = GetComponent<EnemyAttackGun>();
     }
 

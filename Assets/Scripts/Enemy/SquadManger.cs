@@ -14,13 +14,14 @@ public class SquadManger : MonoBehaviour {
     public Color flashColour = new Color(1f, 0f, 0f, 0.1f);
     public Image alarmImage;
     SquadManger squadManager;
-    //public GameObject alarmSpawners;
-    //public Transform alarmSpawnPosition;
+    public GameObject alarmSpawners;
+    public Transform alarmSpawnPosition;
+    float spawnTimer;
+    public float timeBetweenSpawns = 3f;
 
-
-
-   // void SpawnAfterAlarm()
-   // { Instantiate(alarmSpawners, alarmSpawnPosition); }
+   
+    void Awake()
+    { spawnTimer = Time.time + timeBetweenSpawns; }
 
     void BreakPatrol()
     {   if (!alarmSounded)
@@ -38,6 +39,13 @@ public class SquadManger : MonoBehaviour {
 
     void Update()
     {
+        if (alarmSounded && spawnTimer < Time.time)
+        {
+            Instantiate(alarmSpawners, alarmSpawnPosition.position, alarmSpawnPosition.rotation);
+            spawnTimer = Time.time + timeBetweenSpawns;
+        }
+
+
         if (alarmSounded)
 
         {
@@ -58,19 +66,14 @@ public class SquadManger : MonoBehaviour {
         }
 
       
-            foreach (GameObject enemy in squadMembers)
-            {
-                if (enemy.GetComponent<Patrol>().breakPatrol)  //null here
+        foreach (GameObject enemy in squadMembers)
+        {
+                if (enemy.GetComponent<Patrol>().breakPatrol || alarmer.GetComponent<Patrol>().breakPatrol)  //null here
                 {
 
 
                     BreakPatrol();
-                }
-       
-           
-            }
-            //if (alarmSounded)
-            //    { Invoke("SpawnAfterAlarm", 5); }
-
+                }           
+        }
     }
 }
