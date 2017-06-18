@@ -31,8 +31,7 @@ public class SquadManger : MonoBehaviour {
             alarmer.GetComponent<EnemyMovmentSlow>().nav.SetDestination(alarm.position);
         }
     foreach (GameObject enemy in squadMembers)
-            {
-             
+            {         
                 enemy.GetComponent<Patrol>().breakPatrol = true;            //null here
             }
     }
@@ -44,7 +43,6 @@ public class SquadManger : MonoBehaviour {
             Instantiate(alarmSpawners, alarmSpawnPosition.position, alarmSpawnPosition.rotation);
             spawnTimer = Time.time + timeBetweenSpawns;
         }
-
 
         if (alarmSounded)
 
@@ -70,8 +68,6 @@ public class SquadManger : MonoBehaviour {
         {
                 if (enemy.GetComponent<Patrol>().breakPatrol || alarmer.GetComponent<Patrol>().breakPatrol)  //null here
                 {
-
-
                     BreakPatrol();
                 }           
         }

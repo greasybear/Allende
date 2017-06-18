@@ -27,7 +27,7 @@ public class pickUp : MonoBehaviour {
         { inRange = true; plantShield.enabled = false; }
         else { inRange = false; plantShield.enabled = true; }
 
-        if (inRange && Input.GetKeyDown(KeyCode.T))
+        if (inRange && Input.GetKeyDown(KeyCode.E))
         {
             playerMovement.shieldCount += 1f;
             playerMovement.speed -= speedGain;
