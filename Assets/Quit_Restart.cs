@@ -9,16 +9,9 @@ public class Quit_Restart : MonoBehaviour {
     {
         if (Input.GetButton("Cancel"))
         { Application.Quit(); }
-
-
-        
-        
+   
     }
-    public void RestartLevel()
-    {
-        if (Input.GetButton("Submit"))
-          { SceneManager.LoadScene(0); }
-    }
+    
 
 
 
