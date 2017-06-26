@@ -17,6 +17,7 @@ public class PlayerMovement : MonoBehaviour
 
     void Awake()    
     {
+      
         // Create a layer mask for the floor layer.
         floorMask = LayerMask.GetMask("Floor");
         
@@ -26,6 +27,7 @@ public class PlayerMovement : MonoBehaviour
     }
     void Update()
     {
+
         if (Input.GetButton("Fire2") && shieldCount > 0f)
         {
             shieldy.SetActive(true);
