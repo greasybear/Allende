@@ -1,0 +1,220 @@
+fileFormatVersion: 2
+guid: 6862b1eca6290ca4cb2c1616bd1a5176
+timeCreated: 1498013110
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: Camera
+    100002: commando
+    100004: Directional Light
+    100006: FullBodyIK
+    100008: Goal
+    100010: Goal (2)
+    100012: Goal (3)
+    100014: Goal (4)
+    100016: Group Locator
+    100018: Skeleton_Joint
+    100020: Skeleton_Joint (2)
+    100022: Skeleton_Joint (3)
+    100024: Skeleton_Joint (4)
+    100026: Skeleton_Joint_L
+    100028: Skeleton_Joint_L (2)
+    100030: Skeleton_Joint_L (3)
+    100032: Skeleton_Joint_L (4)
+    100034: Skeleton_Joint_L (5)
+    100036: Skeleton_Joint_L (6)
+    100038: Skeleton_Joint_R
+    100040: Skeleton_Joint_R (2)
+    100042: Skeleton_Joint_R (3)
+    100044: Skeleton_Joint_R (4)
+    100046: Skeleton_Joint_R (5)
+    100048: Skeleton_Joint_R (6)
+    100050: //RootNode
+    400000: Camera
+    400002: commando
+    400004: Directional Light
+    400006: FullBodyIK
+    400008: Goal
+    400010: Goal (2)
+    400012: Goal (3)
+    400014: Goal (4)
+    400016: Group Locator
+    400018: Skeleton_Joint
+    400020: Skeleton_Joint (2)
+    400022: Skeleton_Joint (3)
+    400024: Skeleton_Joint (4)
+    400026: Skeleton_Joint_L
+    400028: Skeleton_Joint_L (2)
+    400030: Skeleton_Joint_L (3)
+    400032: Skeleton_Joint_L (4)
+    400034: Skeleton_Joint_L (5)
+    400036: Skeleton_Joint_L (6)
+    400038: Skeleton_Joint_R
+    400040: Skeleton_Joint_R (2)
+    400042: Skeleton_Joint_R (3)
+    400044: Skeleton_Joint_R (4)
+    400046: Skeleton_Joint_R (5)
+    400048: Skeleton_Joint_R (6)
+    400050: //RootNode
+    4300000: commando
+    7400000: Take 001
+    9500000: //RootNode
+    13700000: commando
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Take 001
+      takeName: Take 001
+      firstFrame: 1
+      lastFrame: 30
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Camera
+        weight: 1
+      - path: Directional Light
+        weight: 1
+      - path: Goal
+        weight: 1
+      - path: Goal (2)
+        weight: 1
+      - path: Goal (3)
+        weight: 1
+      - path: Goal (4)
+        weight: 1
+      - path: Group Locator
+        weight: 1
+      - path: Group Locator/commando
+        weight: 1
+      - path: Skeleton_Joint
+        weight: 1
+      - path: Skeleton_Joint/FullBodyIK
+        weight: 1
+      - path: Skeleton_Joint/Skeleton_Joint (4)
+        weight: 1
+      - path: Skeleton_Joint/Skeleton_Joint (4)/Skeleton_Joint (2)
+        weight: 1
+      - path: Skeleton_Joint/Skeleton_Joint (4)/Skeleton_Joint (2)/Skeleton_Joint
+          (3)
+        weight: 1
+      - path: Skeleton_Joint/Skeleton_Joint (4)/Skeleton_Joint_L (3)
+        weight: 1
+      - path: Skeleton_Joint/Skeleton_Joint (4)/Skeleton_Joint_L (3)/Skeleton_Joint_L
+          (2)
+        weight: 1
+      - path: Skeleton_Joint/Skeleton_Joint (4)/Skeleton_Joint_L (3)/Skeleton_Joint_L
+          (2)/Skeleton_Joint_L (5)
+        weight: 1
+      - path: Skeleton_Joint/Skeleton_Joint (4)/Skeleton_Joint_R
+        weight: 1
+      - path: Skeleton_Joint/Skeleton_Joint (4)/Skeleton_Joint_R/Skeleton_Joint_R
+          (2)
+        weight: 1
+      - path: Skeleton_Joint/Skeleton_Joint (4)/Skeleton_Joint_R/Skeleton_Joint_R
+          (2)/Skeleton_Joint_R (5)
+        weight: 1
+      - path: Skeleton_Joint/Skeleton_Joint_L
+        weight: 1
+      - path: Skeleton_Joint/Skeleton_Joint_L/Skeleton_Joint_L (4)
+        weight: 1
+      - path: Skeleton_Joint/Skeleton_Joint_L/Skeleton_Joint_L (4)/Skeleton_Joint_L
+          (6)
+        weight: 1
+      - path: Skeleton_Joint/Skeleton_Joint_R (3)
+        weight: 1
+      - path: Skeleton_Joint/Skeleton_Joint_R (3)/Skeleton_Joint_R (4)
+        weight: 1
+      - path: Skeleton_Joint/Skeleton_Joint_R (3)/Skeleton_Joint_R (4)/Skeleton_Joint_R
+          (6)
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 1
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

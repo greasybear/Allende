@@ -5,16 +5,20 @@ using UnityEngine;
 public class CFour : MonoBehaviour {
 
     bool close;
-    public bool c4Aquired = false;
+    public static bool c4Aquired = false;
+    Transform player;
 
-    void OnTriggerEnter()
-    { close = true; }
-
-    void OnTriggerExit()
-    { close = false; }
+    void Awake()
+    { player = GameObject.FindGameObjectWithTag("Player").transform; }
+    
 
     void Update()
     {
+        float dist = Vector3.Distance(player.position, transform.position);
+        if (dist < 2f)
+        { close = true; }
+        else { close = false; }
+
         if (close && Input.GetKeyDown(KeyCode.E))
         {
             c4Aquired = true;

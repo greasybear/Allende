@@ -9,19 +9,24 @@ public class SquadManger : MonoBehaviour {
     public GameObject[] squadMembers;
     public GameObject alarmer;
     public Transform alarm;
-    public bool alarmSounded = false;
+    public static bool alarmSounded = false;
     public float flashSpeed = 5f;
     public Color flashColour = new Color(1f, 0f, 0f, 0.1f);
     public Image alarmImage;
-    SquadManger squadManager;
+    //SquadManger squadManager;
     public GameObject alarmSpawners;
     public Transform alarmSpawnPosition;
     float spawnTimer;
     public float timeBetweenSpawns = 3f;
-
+    
+   
    
     void Awake()
-    { spawnTimer = Time.time + timeBetweenSpawns; }
+    {
+        spawnTimer = Time.time + timeBetweenSpawns;
+   
+    }
+   
 
     void BreakPatrol()
     {   if (!alarmSounded)
@@ -47,8 +52,10 @@ public class SquadManger : MonoBehaviour {
         if (alarmSounded)
 
         {
+            
             alarmImage.color = flashColour;
         }
+        
      
         if (alarmer !=null)
         {
@@ -71,5 +78,8 @@ public class SquadManger : MonoBehaviour {
                     BreakPatrol();
                 }           
         }
+
+        
+
     }
 }
