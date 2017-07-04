@@ -17,6 +17,10 @@ public class PlayerShooting : MonoBehaviour
     Light gunLight;
     float effectsDisplayTime = 0.2f;
     public bool shield;
+    public bool rocketLauncher = false;
+    public bool ak = true;
+    public GameObject rocket;
+    public float shotSpeed;
 
 
     void Awake ()
@@ -30,16 +34,45 @@ public class PlayerShooting : MonoBehaviour
         
         
     }
+    void shootRocket()
+    {
+        timer = 0f;
+
+        gunAudio.Play();
+
+        gunLight.enabled = true;
+
+        gunParticles.Stop();
+        gunParticles.Play();
+
+        
+
+        GameObject shooter = Instantiate(rocket, transform.position, transform.rotation * Quaternion.Euler(0,90,90)) as GameObject;
+        shooter.GetComponent<Rigidbody>().AddForce(transform.forward * shotSpeed + Random.insideUnitSphere * accuracy);
+    }
+
 
     void Update ()
     {
+        if(rocketLauncher)
+        {
+            ak = false;
+            timeBetweenBullets = 1f;
+        }
+        if(ak)
+        {
+            rocketLauncher = false;
+            timeBetweenBullets = .15f;
+        }
 
         timer += Time.deltaTime;
 
-		if(Input.GetButton ("Fire1") && timer >= timeBetweenBullets && Time.timeScale != 0)
+		if(Input.GetButton ("Fire1") && timer >= timeBetweenBullets && Time.timeScale != 0 && ak)
         {
             Shoot ();
         }
+        else if (Input.GetButton("Fire1") && timer >= timeBetweenBullets && Time.timeScale != 0 && rocketLauncher)
+        { shootRocket(); }
 
         if(timer >= timeBetweenBullets * effectsDisplayTime)
         {

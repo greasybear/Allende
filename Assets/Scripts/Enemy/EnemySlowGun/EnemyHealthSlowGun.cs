@@ -72,6 +72,24 @@ public class EnemyHealthSlowGun : MonoBehaviour {
 
         }
     }
+    public void TakeDamageObject(int amount)
+    {
+        if (isDead)
+            return;
+
+        enemyAudio.Play();
+        beingShot = true;
+        currentHealth -= amount;
+
+        
+
+        if (currentHealth <= 0)
+        {
+            Death();
+
+        }
+    }
+    
 
 
     public void Death()

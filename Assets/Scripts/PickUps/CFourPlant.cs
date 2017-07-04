@@ -3,11 +3,14 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class CFourPlant : MonoBehaviour {
-    bool close;
+    public bool close;
     public GameObject c4;
     public GameObject blowUp;
     public Transform player;
     public static bool isDestroyed = false;
+    public GameObject explosion;
+    public GameObject buildingParts; 
+    
     
     
 
@@ -21,12 +24,28 @@ public class CFourPlant : MonoBehaviour {
         { close = true; }
         else { close = false; }
 
+
+        if (blowUp == null)
+        {
+            GameObject parts = Instantiate(buildingParts, transform.position, Quaternion.identity);
+            Destroy(parts, 5);
+        }
+
         if (close && Input.GetButtonDown("Fire2") && CFour.c4Aquired)
         {
-            Instantiate(c4);
+            Instantiate(c4, transform.position, Quaternion.identity);
+
 
             isDestroyed = true;
-            Destroy(blowUp);
+            GameObject exp = Instantiate(explosion, transform.position, Quaternion.identity);
+            
+           
+            Destroy(c4,5);
+            Destroy(exp, 5);
+            Destroy(blowUp, 5);
+            
+
+            
             
             
 

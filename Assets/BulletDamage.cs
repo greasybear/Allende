@@ -6,6 +6,7 @@ public class BulletDamage : MonoBehaviour {
     public int damage;
     GameObject player;
     PlayerHealth playerHealth;
+    float timer;
     void Awake()
     {
         player = GameObject.FindWithTag("Player");
@@ -22,8 +23,16 @@ public class BulletDamage : MonoBehaviour {
             Destroy(gameObject);
         }
         else { Destroy(gameObject); }
+
+        
         
 
+    }
+    void Update()
+    { timer += Time.deltaTime; 
+
+    if (timer > 4)
+        {Destroy(gameObject); }
     }
 
 }
