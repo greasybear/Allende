@@ -47,7 +47,7 @@ public class PlayerShooting : MonoBehaviour
 
         
 
-        GameObject shooter = Instantiate(rocket, transform.position, transform.rotation * Quaternion.Euler(0,90,90)) as GameObject;
+        GameObject shooter = Instantiate(rocket, transform.position + (transform.forward * 2), transform.rotation * Quaternion.Euler(0,90,90)) as GameObject;
         shooter.GetComponent<Rigidbody>().AddForce(transform.forward * shotSpeed + Random.insideUnitSphere * accuracy);
     }
 

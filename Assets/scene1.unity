@@ -476,7 +476,7 @@ ParticleSystem:
   moveWithTransform: 0
   moveWithCustomTransform: {fileID: 0}
   scalingMode: 2
-  randomSeed: -1115486007
+  randomSeed: 1462964791
   InitialModule:
     serializedVersion: 3
     enabled: 1
@@ -3968,6 +3968,42 @@ Prefab:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 114788835103866726, guid: 66f26fcfbc0d4c54784f678bfc082702,
+        type: 2}
+      propertyPath: rockets
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114788835103866726, guid: 66f26fcfbc0d4c54784f678bfc082702,
+        type: 2}
+      propertyPath: gunshot
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114788835103866726, guid: 66f26fcfbc0d4c54784f678bfc082702,
+        type: 2}
+      propertyPath: enemyRocket
+      value: 
+      objectReference: {fileID: 1783591183832592, guid: 3ca4757c897bdc441ac27d16a5008623,
+        type: 2}
+    - target: {fileID: 1209087984806554, guid: 66f26fcfbc0d4c54784f678bfc082702, type: 2}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1633722818907830, guid: 66f26fcfbc0d4c54784f678bfc082702, type: 2}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1771305873849058, guid: 66f26fcfbc0d4c54784f678bfc082702, type: 2}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1575475649196358, guid: 66f26fcfbc0d4c54784f678bfc082702, type: 2}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1670558540561448, guid: 66f26fcfbc0d4c54784f678bfc082702, type: 2}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 82450473373822406, guid: 66f26fcfbc0d4c54784f678bfc082702, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: 66f26fcfbc0d4c54784f678bfc082702, type: 2}
@@ -4830,7 +4866,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 544f2064df03e95419b4a5147c506b08, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startingHealth: 160
+  startingHealth: 1000000
   currentHealth: 0
   healthSlider: {fileID: 14893187}
   damageImage: {fileID: 1112049955}

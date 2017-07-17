@@ -22,11 +22,11 @@ GameObject:
   - component: {fileID: 33427068738895048}
   - component: {fileID: 136535791044294226}
   - component: {fileID: 23984954258200702}
-  - component: {fileID: 114567167244079486}
   - component: {fileID: 54958578358248692}
   - component: {fileID: 135188173104644040}
+  - component: {fileID: 114262850619020214}
   m_Layer: 0
-  m_Name: Rocket
+  m_Name: EnemyRocket
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -99,7 +99,7 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &114567167244079486
+--- !u!114 &114262850619020214
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -107,10 +107,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1783591183832592}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e64cc8d5e1ff74d4a94d1330185884b8, type: 3}
+  m_Script: {fileID: 11500000, guid: 4269b411ba6d1314aab49dbaeb1c874a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 100
+  damage: 50
   explosion: {fileID: 1828441369316746, guid: 135d6faca03cd824e8eabc2af9da0e5d, type: 2}
   radius: 5
   damageRadius: []
